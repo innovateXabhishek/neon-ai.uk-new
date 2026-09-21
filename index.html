@@ -58,6 +58,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text"
 .button-lime:hover{background:#a9f52f;border-color:#a9f52f;color:var(--ink)!important}
 .global-footer .footer-contact .button-soft{background:var(--lime);border-color:var(--lime);color:var(--ink)!important}
 .global-footer .footer-contact .button-soft:hover{background:#a9f52f;border-color:#a9f52f;color:var(--ink)!important}
+.tier.custom-tier{position:relative;overflow:hidden;border:2px solid var(--lime);background:linear-gradient(155deg,#fff 0%,#fff 58%,#f7ffe8 100%);box-shadow:0 18px 48px rgba(53,79,0,.12),0 0 0 1px rgba(184,255,61,.18)}
+.tier.custom-tier:before{content:'';position:absolute;left:0;right:0;top:0;height:6px;background:var(--lime)}
+.custom-badge{background:var(--lime);color:var(--ink)}
+.tier.custom-tier .custom-feature{margin:0 -12px;padding:11px 12px 11px 42px;border-radius:10px;background:var(--lime);color:var(--ink);font-weight:800}
+.tier.custom-tier .custom-feature:before{left:13px;top:8px;color:var(--ink)}
+.tier.custom-tier .custom-cta{width:100%;box-shadow:0 8px 24px rgba(83,122,0,.16)}
 </style>
 </head>
 <body>
@@ -1081,9 +1087,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text"
 <p class="tier-note">For intelligence that moves into action.</p>
 </div>
 </article>
-<article class="tier">
+<article class="tier custom-tier">
 <div class="tier-top">
 <span class="tier-name">Custom</span>
+<span class="tier-badge custom-badge">Operational control</span>
 </div>
 <h2>See + Act + Control</h2>
 <p class="tier-summary">Financial and operational intelligence across groups, entities and currencies.</p>
@@ -1093,14 +1100,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text"
 </div>
 <ul class="tier-list">
 <li>Everything in Growth</li>
-<li>Operational WALL™ available</li>
+<li class="custom-feature">Operational WALL™ available</li>
 <li>14 primary operational KPIs</li>
 <li>Enhanced custom integrations</li>
 <li>Ecosystem / complex structures</li>
 <li>Multi-currency</li>
 </ul>
 <div class="tier-cta">
-<a class="button button-soft" href="#book">Discuss Custom ↗</a>
+<a class="button button-lime custom-cta" href="#book">Discuss Custom ↗</a>
 <p class="tier-note">Operational expansion scoped to your business.</p>
 </div>
 </article>
